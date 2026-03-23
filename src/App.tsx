@@ -49,7 +49,7 @@ function App() {
       icon: Lightbulb
     },
     {
-      title: 'Semáforo con Arduino',
+      title: 'Semáforo con ARDUINO',
       description: 'Simulación de un sistema de tráfico con LEDs, tiempos programables y control de flujo vehicular.',
       icon: Zap
     }
