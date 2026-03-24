@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, FormEvent } from 'react';
 import {
   Menu,
   X,
@@ -31,11 +31,34 @@ function App() {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert('¡Gracias por tu mensaje! Nos pondremos en contacto pronto.');
-    setFormData({ name: '', email: '', message: '' });
-  };
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+  event.preventDefault();
+
+  const form = event.currentTarget;
+  const formDataObj = new FormData(form);
+  const params = new URLSearchParams();
+
+  formDataObj.forEach((value, key) => {
+    params.append(key, String(value));
+  });
+
+  try {
+    await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: params.toString(),
+    });
+
+    alert("Mensaje enviado correctamente");
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+  } catch (error) {
+    alert("Hubo un error al enviar el formulario");
+  }
+};
 
   const projects = [
     {
@@ -286,12 +309,17 @@ function App() {
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit} className="space-y-6">
+            <input 
+              type="hidden" 
+              name="form-name" 
+              value="contact" />
             <div>
               <label htmlFor="name" className="block text-gray-300 mb-2 font-medium">Nombre</label>
               <input
                 type="text"
                 id="name"
+                name="name"
                 required
                 value={formData.name}
                 onChange={(e) => setFormData({...formData, name: e.target.value})}
@@ -305,6 +333,7 @@ function App() {
               <input
                 type="email"
                 id="email"
+                name="email"
                 required
                 value={formData.email}
                 onChange={(e) => setFormData({...formData, email: e.target.value})}
@@ -317,13 +346,14 @@ function App() {
               <label htmlFor="message" className="block text-gray-300 mb-2 font-medium">Mensaje</label>
               <textarea
                 id="message"
+                name="message"
                 required
                 value={formData.message}
                 onChange={(e) => setFormData({...formData, message: e.target.value})}
                 rows={5}
                 className="w-full px-4 py-3 bg-slate-700/50 border border-cyan-500/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-cyan-400 transition resize-none"
                 placeholder="Cuéntanos sobre tu interés en tecnología..."
-              />
+              ></textarea>
             </div>
 
             <button
