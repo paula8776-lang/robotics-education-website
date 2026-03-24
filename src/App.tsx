@@ -309,11 +309,11 @@ function App() {
             </p>
           </div>
 
-          <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit} className="space-y-6">
+          <form name="contacto" method="POST" data-netlify="true" onSubmit={handleSubmit} className="space-y-6">
             <input 
               type="hidden" 
               name="form-name" 
-              value="contact" />
+              value="contacto" />
             <div>
               <label htmlFor="name" className="block text-gray-300 mb-2 font-medium">Nombre</label>
               <input
