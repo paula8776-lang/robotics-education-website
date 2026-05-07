@@ -267,11 +267,12 @@ function App() {
                 <span className="bg-green-500/20 border border-green-500/30 px-4 py-2 rounded-lg text-green-300">JavaScript</span>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-green-500/20 to-emerald-600/20 rounded-2xl p-12 border border-green-500/30 backdrop-blur-sm">
-              <div className="flex items-center justify-center h-64">
-                <Code className="w-48 h-48 text-green-400/50" />
+            <div className="rounded-2xl overflow-hidden border border-green-500/30 shadow-lg shadow-green-500/20">
+              <img
+                src={imagen4}
+                alt="Estudiantes aprendiendo programación y desarrollo de software"
+                className="w-full h-80 object-cover"/>
               </div>
-            </div>
           </div>
         </div>
       </section>
