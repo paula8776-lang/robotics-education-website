@@ -193,10 +193,11 @@ function App() {
       <section id="computacion" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="bg-gradient-to-br from-blue-500/20 to-cyan-600/20 rounded-2xl p-12 border border-blue-500/30 backdrop-blur-sm order-2 md:order-1">
-              <div className="flex items-center justify-center h-64">
-                <Cpu className="w-48 h-48 text-blue-400/50" />
-              </div>
+            <div className="rounded-2xl overflow-hidden border border-blue-500/30 shadow-lg shadow-blue-500/20 order-2 md:order-1">
+              <img
+                src={imagen3}
+                alt="Computación física con sensores, circuitos y microcontroladores"
+                className="w-full h-80 object-cover"/>
             </div>
             <div className="order-1 md:order-2">
               <div className="flex items-center gap-3 mb-4">
