@@ -331,6 +331,21 @@ function App() {
         </p>
         <span className="text-cyan-400 font-semibold">Abrir guía</span>
       </a>
+
+      <a
+        href="/guias/Guia_prueba_camara_ESP32S3_N16R8.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-slate-900/70 border border-cyan-500/30 rounded-xl p-6 hover:scale-105 transition block hover:shadow-xl hover:shadow-cyan-500/20"
+      >
+        <h3 className="text-xl font-bold text-white mb-3">
+          Guía prueba cámara ESP32-S3 N16R8
+        </h3>
+        <p className="text-gray-300 mb-4">
+         Guía práctica para probar la cámara con la tarjeta ESP32-S3 N16R8.
+        </p>
+        <span className="text-cyan-400 font-semibold">Abrir guía</span>
+      </a>
         </div>
         </div>
       </section>
