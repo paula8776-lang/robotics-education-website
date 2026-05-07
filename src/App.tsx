@@ -1,4 +1,8 @@
 import { useState, FormEvent } from 'react';
+import imagen1 from './assets/Imagen1.png';
+import imagen2 from './assets/Imagen2.png';
+import imagen3 from './assets/Imagen3.png';
+import imagen4 from './assets/Imagen4.png';
 import {
   Menu,
   X,
@@ -176,10 +180,11 @@ function App() {
                 </li>
               </ul>
             </div>
-            <div className="bg-gradient-to-br from-cyan-500/20 to-blue-600/20 rounded-2xl p-12 border border-cyan-500/30 backdrop-blur-sm">
-              <div className="flex items-center justify-center h-64">
-                <Bot className="w-48 h-48 text-cyan-400/50" />
-              </div>
+            <div className="rounded-2xl overflow-hidden border border-cyan-500/30 shadow-lg shadow-cyan-500/20">
+              <img
+                src={imagen2}
+                alt="Estudiantes trabajando en proyectos de robótica educativa"
+                className="w-full h-80 object-cover"/>
             </div>
           </div>
         </div>
