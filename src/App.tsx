@@ -306,7 +306,33 @@ function App() {
           </div>
         </div>
       </section>
+      <section id="guias" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
+  <div className="max-w-7xl mx-auto">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+        Guías de Trabajo
+      </h2>
+      <p className="text-gray-300 text-lg">
+        Material de apoyo para las prácticas de tecnología, robótica y programación.
+      </p>
+    </div>
 
+    <div className="grid md:grid-cols-3 gap-8">
+      <a
+        href="/guias/Guia_uso_esp32.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-slate-900/70 border border-cyan-500/30 rounded-xl p-6 hover:scale-105 transition block hover:shadow-xl hover:shadow-cyan-500/20"
+      >
+        <h3 className="text-xl font-bold text-white mb-3">Guía de uso ESP32</h3>
+        <p className="text-gray-300 mb-4">
+          Guía práctica para trabajar con ESP32 en clase.
+        </p>
+        <span className="text-cyan-400 font-semibold">Abrir guía</span>
+      </a>
+    </div>
+  </div>
+</section>
       <section id="contacto" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
