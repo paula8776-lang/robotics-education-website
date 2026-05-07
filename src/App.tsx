@@ -234,7 +234,7 @@ function App() {
         </div>
       </section>
 
-      <section id="programacion" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
+<section id="programacion" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
   <div className="max-w-7xl mx-auto">
     <div className="grid md:grid-cols-2 gap-12 items-center">
       <div>
@@ -378,7 +378,6 @@ function App() {
         </div>
         </div>
       </section>
-        
         
 
 
