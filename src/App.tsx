@@ -330,9 +330,9 @@ function App() {
         </p>
         <span className="text-cyan-400 font-semibold">Abrir guía</span>
       </a>
-    </div>
-  </div>
-</section>
+        </div>
+        </div>
+      </section>
       <section id="contacto" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
