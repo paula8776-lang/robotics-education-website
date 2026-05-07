@@ -107,12 +107,6 @@ function App() {
             >
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
-            <div className="mt-12 rounded-2xl overflow-hidden border border-cyan-500/30 shadow-2xl shadow-cyan-500/20">
-              <img
-                src={imagen1}
-                alt="Estudiantes aprendiendo tecnología, robótica e inteligencia artificial"
-                className="w-full h-[420px] object-cover"/>
-          </div>
           </div>
         </div>
 
