@@ -235,6 +235,77 @@ function App() {
       </section>
 
       <section id="programacion" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
+  <div className="max-w-7xl mx-auto">
+    <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <div className="flex items-center gap-3 mb-4">
+          <Code className="w-10 h-10 text-green-400" />
+          <h2 className="text-3xl sm:text-4xl font-bold text-white">
+            Programación y Desarrollo de Software
+          </h2>
+        </div>
+
+        <p className="text-gray-300 text-lg mb-6 leading-relaxed">
+          En esta área se fortalecen las bases del pensamiento lógico, la resolución de problemas
+          y la creación de soluciones digitales. Los estudiantes aprenden a analizar una necesidad,
+          diseñar una propuesta, construir algoritmos y desarrollar programas aplicados a situaciones reales.
+        </p>
+
+        <h3 className="text-xl font-semibold text-green-400 mb-3">
+          Temas que trabajamos:
+        </h3>
+
+        <ul className="space-y-3 text-gray-300 mb-6">
+          <li className="flex items-start gap-2">
+            <ChevronRight className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+            <span><strong>Algoritmos y lógica:</strong> análisis de problemas, pasos ordenados, diagramas de flujo y pseudocódigo.</span>
+          </li>
+
+          <li className="flex items-start gap-2">
+            <ChevronRight className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+            <span><strong>PSeInt y FreeDFD:</strong> herramientas para iniciar en la programación de forma visual y estructurada.</span>
+          </li>
+
+          <li className="flex items-start gap-2">
+            <ChevronRight className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+            <span><strong>Lenguajes de programación:</strong> Java, Python, JavaScript y C++ aplicado a Arduino.</span>
+          </li>
+
+          <li className="flex items-start gap-2">
+            <ChevronRight className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+            <span><strong>Desarrollo de software:</strong> análisis, diseño, implementación, pruebas y mejora de proyectos.</span>
+          </li>
+
+          <li className="flex items-start gap-2">
+            <ChevronRight className="w-5 h-5 text-green-400 mt-1 flex-shrink-0" />
+            <span><strong>Proyectos escolares:</strong> aplicaciones, sistemas de registro, prototipos web y soluciones tecnológicas para el entorno educativo.</span>
+          </li>
+        </ul>
+
+        <h3 className="text-xl font-semibold text-green-400 mb-3">
+          Herramientas utilizadas:
+        </h3>
+
+        <div className="flex flex-wrap gap-3">
+          <span className="bg-green-500/20 border border-green-500/30 px-4 py-2 rounded-lg text-green-300">PSeInt</span>
+          <span className="bg-green-500/20 border border-green-500/30 px-4 py-2 rounded-lg text-green-300">FreeDFD</span>
+          <span className="bg-green-500/20 border border-green-500/30 px-4 py-2 rounded-lg text-green-300">Java</span>
+          <span className="bg-green-500/20 border border-green-500/30 px-4 py-2 rounded-lg text-green-300">Python</span>
+          <span className="bg-green-500/20 border border-green-500/30 px-4 py-2 rounded-lg text-green-300">HTML, CSS y JavaScript</span>
+          <span className="bg-green-500/20 border border-green-500/30 px-4 py-2 rounded-lg text-green-300">Arduino IDE</span>
+        </div>
+      </div>
+
+      <div className="rounded-2xl overflow-hidden border border-green-500/30 shadow-lg shadow-green-500/20">
+        <img
+          src={imagen4}
+          alt="Estudiantes aprendiendo programación y desarrollo de software"
+          className="w-full h-80 object-cover"
+        />
+      </div>
+    </div>
+  </div>
+</section>
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
