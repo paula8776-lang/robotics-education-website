@@ -98,6 +98,7 @@ function App() {
               <button onClick={() => scrollToSection('computacion')} className="text-gray-300 hover:text-cyan-400 transition">Computación Física</button>
               <button onClick={() => scrollToSection('programacion')} className="text-gray-300 hover:text-cyan-400 transition">Programación</button>
               <button onClick={() => scrollToSection('proyectos')} className="text-gray-300 hover:text-cyan-400 transition">Proyectos</button>
+              <button onClick={() => scrollToSection('guias')} className="text-gray-300 hover:text-cyan-400 transition">Guías</button>
               <button onClick={() => scrollToSection('contacto')} className="text-gray-300 hover:text-cyan-400 transition">Contacto</button>
             </div>
 
