@@ -379,6 +379,89 @@ function App() {
         </div>
       </section>
         
+      
+      <section id="videos" className="py-20 px-4 sm:px-6 lg:px-8">
+  <div className="max-w-7xl mx-auto">
+    <div className="text-center mb-12">
+      <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+        Videos de Clase
+      </h2>
+      <p className="text-gray-300 text-lg">
+        Recursos audiovisuales para fortalecer las prácticas de tecnología, robótica, programación e inteligencia artificial.
+      </p>
+    </div>
+
+    <div className="grid md:grid-cols-2 gap-8">
+      <div className="bg-slate-900/70 border border-cyan-500/30 rounded-xl p-4 hover:shadow-xl hover:shadow-cyan-500/20 transition">
+        <div className="aspect-video rounded-lg overflow-hidden mb-4">
+          <iframe
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/3l1c2SafXRg"
+            title="Video de clase 1"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <h3 className="text-xl font-bold text-white mb-2">
+          Video de apoyo 1
+        </h3>
+        <p className="text-gray-300">
+          Recurso audiovisual para apoyar el aprendizaje práctico de los estudiantes.
+        </p>
+      </div>
+
+      <div className="bg-slate-900/70 border border-cyan-500/30 rounded-xl p-4 hover:shadow-xl hover:shadow-cyan-500/20 transition">
+        <div className="aspect-video rounded-lg overflow-hidden mb-4">
+          <iframe
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/u6UpXM5aieU?start=23"
+            title="Video de clase 2"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <h3 className="text-xl font-bold text-white mb-2">
+          Video de apoyo 2
+        </h3>
+        <p className="text-gray-300">
+          Material explicativo para reforzar conceptos trabajados en clase.
+        </p>
+      </div>
+
+      <div className="bg-slate-900/70 border border-cyan-500/30 rounded-xl p-4 hover:shadow-xl hover:shadow-cyan-500/20 transition">
+        <div className="aspect-video rounded-lg overflow-hidden mb-4">
+          <iframe
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/zIok9BBML9s"
+            title="Video de clase 3"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <h3 className="text-xl font-bold text-white mb-2">
+          Video de apoyo 3
+        </h3>
+        <p className="text-gray-300">
+          Video práctico para complementar el desarrollo de actividades tecnológicas.
+        </p>
+      </div>
+
+      <div className="bg-slate-900/70 border border-cyan-500/30 rounded-xl p-4 hover:shadow-xl hover:shadow-cyan-500/20 transition">
+        <div className="aspect-video rounded-lg overflow-hidden mb-4">
+          <iframe
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/LMGE-6JDZhA?start=6"
+            title="Video de clase 4"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <h3 className="text-xl font-bold text-white mb-2">
+          Video de apoyo 4
+        </h3>
+        <p className="text-gray-300">
+          Recurso de apoyo para el trabajo con proyectos y prácticas de clase.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
 
       <section id="contacto" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-800/50">
