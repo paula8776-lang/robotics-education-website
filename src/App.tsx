@@ -558,7 +558,7 @@ function App() {
 
           <div className="border-t border-cyan-500/20 mt-8 pt-8 text-center">
             <p className="text-gray-400">
-              © 2024 TechLearn. Todos los derechos reservados.
+              © 2026 Sistemas Informáticos y Robótica. Uso educativo.
             </p>
           </div>
         </div>
