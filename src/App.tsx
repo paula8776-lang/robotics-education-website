@@ -1,5 +1,4 @@
 import { useState, FormEvent } from 'react';
-import imagen1 from './assets/Imagen1.png';
 import imagen2 from './assets/Imagen2.png';
 import imagen3 from './assets/Imagen3.png';
 import imagen4 from './assets/Imagen4.png';
@@ -89,7 +88,7 @@ function App() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <Cpu className="w-8 h-8 text-cyan-400" />
-              <span className="text-xl font-bold text-white">TechLearn</span>
+              <span className="text-xl font-bold text-white">Sistemas Informáticos y Robótica</span>
             </div>
 
             <div className="hidden md:flex space-x-8">
