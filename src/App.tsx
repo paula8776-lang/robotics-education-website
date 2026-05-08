@@ -64,21 +64,36 @@ function App() {
 };
 
   const projects = [
-    {
-      title: 'Robot Seguidor de Línea',
-      description: 'Un robot autónomo que utiliza sensores infrarrojos para seguir una línea negra sobre superficie blanca.',
-      icon: Bot
-    },
-    {
-      title: 'Sistema de Luces Automáticas',
-      description: 'Control inteligente de iluminación usando sensores de movimiento y luz ambiental para eficiencia energética.',
-      icon: Lightbulb
-    },
-    {
-      title: 'Semáforo con Arduino',
-      description: 'Simulación de un sistema de tráfico con LEDs, tiempos programables y control de flujo vehicular.',
-      icon: Zap
-    }
+  {
+    title: 'Sistema de asistencia con reconocimiento facial',
+    description: 'Proyecto orientado al registro de asistencia mediante cámara, detección facial y almacenamiento de información.',
+    icon: Bot
+  },
+  {
+    title: 'Robot evasor de obstáculos',
+    description: 'Prototipo robótico que utiliza sensores ultrasónicos para detectar obstáculos y tomar decisiones de movimiento.',
+    icon: Cpu
+  },
+  {
+    title: 'Detector de ruido para el aula',
+    description: 'Sistema con sensor de sonido para monitorear niveles de ruido y promover ambientes adecuados de aprendizaje.',
+    icon: Zap
+  },
+  {
+    title: 'Casa inteligente con ESP32',
+    description: 'Proyecto de automatización que integra sensores, actuadores y conexión WiFi para controlar dispositivos del hogar.',
+    icon: Lightbulb
+  },
+  {
+    title: 'Aplicaciones con programación',
+    description: 'Desarrollo de soluciones digitales usando lógica, algoritmos, PSeInt, Java, Python y herramientas web.',
+    icon: Code
+  },
+  {
+    title: 'Proyectos con inteligencia artificial',
+    description: 'Uso de herramientas de IA, chatbots, análisis de datos y modelos predictivos aplicados al contexto educativo.',
+    icon: Sparkles
+  }
   ];
 
   return (
@@ -93,10 +108,11 @@ function App() {
 
             <div className="hidden md:flex space-x-8">
               <button onClick={() => scrollToSection('inicio')} className="text-gray-300 hover:text-cyan-400 transition">Inicio</button>
-              <button onClick={() => scrollToSection('docente')} className="text-gray-300 hover:text-cyan-400 transition">Sobre la docente</button>
+              <button onClick={() => scrollToSection('docente')} className="text-gray-300 hover:text-cyan-400 transition">Docente</button>
               <button onClick={() => scrollToSection('robotica')} className="text-gray-300 hover:text-cyan-400 transition">Robótica</button>
               <button onClick={() => scrollToSection('computacion')} className="text-gray-300 hover:text-cyan-400 transition">Computación Física</button>
               <button onClick={() => scrollToSection('programacion')} className="text-gray-300 hover:text-cyan-400 transition">Programación</button>
+              <button onClick={() => scrollToSection('IA')} className="text-gray-300 hover:text-cyan-400 transition">Inteligencia Artificial</button>
               <button onClick={() => scrollToSection('proyectos')} className="text-gray-300 hover:text-cyan-400 transition">Proyectos</button>
               <button onClick={() => scrollToSection('guias')} className="text-gray-300 hover:text-cyan-400 transition">Guías</button>
               <button onClick={() => scrollToSection('videos')} className="text-gray-300 hover:text-cyan-400 transition">Videos</button>
@@ -116,10 +132,11 @@ function App() {
           <div className="md:hidden bg-slate-800/95 backdrop-blur-sm">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <button onClick={() => scrollToSection('inicio')} className="block w-full text-left px-3 py-2 text-gray-300 hover:text-cyan-400 hover:bg-slate-700 rounded transition">Inicio</button>
-              <button onClick={() => scrollToSection('docente')} className="block w-full text-left px-3 py-2 text-gray-300 hover:text-cyan-400 hover:bg-slate-700 rounded transition">Sobre la docente</button>
+              <button onClick={() => scrollToSection('docente')} className="block w-full text-left px-3 py-2 text-gray-300 hover:text-cyan-400 hover:bg-slate-700 rounded transition">Docente</button>
               <button onClick={() => scrollToSection('robotica')} className="block w-full text-left px-3 py-2 text-gray-300 hover:text-cyan-400 hover:bg-slate-700 rounded transition">Robótica</button>
               <button onClick={() => scrollToSection('computacion')} className="block w-full text-left px-3 py-2 text-gray-300 hover:text-cyan-400 hover:bg-slate-700 rounded transition">Computación Física</button>
               <button onClick={() => scrollToSection('programacion')} className="block w-full text-left px-3 py-2 text-gray-300 hover:text-cyan-400 hover:bg-slate-700 rounded transition">Programación</button>
+              <button onClick={() => scrollToSection('IA')} className="block w-full text-left px-3 py-2 text-gray-300 hover:text-cyan-400 hover:bg-slate-700 rounded transition">Inteligencia Artificial</button>
               <button onClick={() => scrollToSection('proyectos')} className="block w-full text-left px-3 py-2 text-gray-300 hover:text-cyan-400 hover:bg-slate-700 rounded transition">Proyectos</button>
               <button onClick={() => scrollToSection('contacto')} className="block w-full text-left px-3 py-2 text-gray-300 hover:text-cyan-400 hover:bg-slate-700 rounded transition">Contacto</button>
             </div>
@@ -362,6 +379,75 @@ function App() {
     </div>
   </div>
 </section>
+
+<section id="ia" className="py-20 px-4 sm:px-6 lg:px-8">
+  <div className="max-w-7xl mx-auto">
+    <div className="grid md:grid-cols-2 gap-12 items-center">
+      <div className="order-2 md:order-1 bg-gradient-to-br from-purple-500/20 to-cyan-600/20 rounded-2xl p-8 border border-purple-500/30 shadow-lg shadow-purple-500/20">
+        <h3 className="text-2xl font-bold text-white mb-4">
+          Aplicaciones educativas
+        </h3>
+
+        <ul className="space-y-4 text-gray-300">
+          <li className="flex items-start gap-2">
+            <ChevronRight className="w-5 h-5 text-purple-400 mt-1 flex-shrink-0" />
+            <span>Uso responsable de herramientas de inteligencia artificial.</span>
+          </li>
+
+          <li className="flex items-start gap-2">
+            <ChevronRight className="w-5 h-5 text-purple-400 mt-1 flex-shrink-0" />
+            <span>Creación de prompts para resolver problemas y mejorar ideas.</span>
+          </li>
+
+          <li className="flex items-start gap-2">
+            <ChevronRight className="w-5 h-5 text-purple-400 mt-1 flex-shrink-0" />
+            <span>Diseño de chatbots educativos y asistentes virtuales.</span>
+          </li>
+
+          <li className="flex items-start gap-2">
+            <ChevronRight className="w-5 h-5 text-purple-400 mt-1 flex-shrink-0" />
+            <span>Análisis de datos, predicciones y visualización de información.</span>
+          </li>
+
+          <li className="flex items-start gap-2">
+            <ChevronRight className="w-5 h-5 text-purple-400 mt-1 flex-shrink-0" />
+            <span>Integración de IA en proyectos escolares de tecnología.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div className="order-1 md:order-2">
+        <div className="flex items-center gap-3 mb-4">
+          <Sparkles className="w-10 h-10 text-purple-400" />
+          <h2 className="text-3xl sm:text-4xl font-bold text-white">
+            Inteligencia Artificial
+          </h2>
+        </div>
+
+        <p className="text-gray-300 text-lg mb-6 leading-relaxed">
+          La inteligencia artificial permite crear soluciones capaces de analizar información,
+          reconocer patrones, apoyar la toma de decisiones y automatizar tareas. En clase se trabaja
+          desde un enfoque práctico, ético y aplicado a situaciones reales del entorno educativo.
+        </p>
+
+        <h3 className="text-xl font-semibold text-purple-400 mb-3">
+          Temas que trabajamos:
+        </h3>
+
+        <div className="flex flex-wrap gap-3">
+          <span className="bg-purple-500/20 border border-purple-500/30 px-4 py-2 rounded-lg text-purple-300">Prompts</span>
+          <span className="bg-purple-500/20 border border-purple-500/30 px-4 py-2 rounded-lg text-purple-300">Chatbots</span>
+          <span className="bg-purple-500/20 border border-purple-500/30 px-4 py-2 rounded-lg text-purple-300">Análisis de datos</span>
+          <span className="bg-purple-500/20 border border-purple-500/30 px-4 py-2 rounded-lg text-purple-300">Modelos predictivos</span>
+          <span className="bg-purple-500/20 border border-purple-500/30 px-4 py-2 rounded-lg text-purple-300">IA generativa</span>
+          <span className="bg-purple-500/20 border border-purple-500/30 px-4 py-2 rounded-lg text-purple-300">Ética digital</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
       <section id="proyectos" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
